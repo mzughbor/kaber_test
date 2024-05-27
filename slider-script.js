@@ -1,3 +1,4 @@
+
 const slideContainer = document.querySelector('.slide-container');
 const slides = document.querySelectorAll('.slide');
 const arrowLeft = document.querySelector('.arrow-left');
