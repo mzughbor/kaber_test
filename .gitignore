@@ -20,4 +20,4 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
-ind2.html
+.ind2.html
