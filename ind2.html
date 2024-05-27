@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-container {
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  height: auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+</style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slide-container">
+          <img src="imgs/bg-light.jpg" alt="Image 1" class="slide">
+          <img src="imgs/full-equiped-medical-cabinet.png" alt="Image 3" class="slide">
+          <img src="imgs/bg-light.jpg" alt="Image 1" class="slide">
+
+        </div>
+        <button class="arrow arrow-left">&lt;</button>
+        <button class="arrow arrow-right">&gt;</button>
+      </div>
+</body>
+<script src="slider-script.js"></script>
+</html>

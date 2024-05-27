@@ -1,0 +1,243 @@
+@font-face {
+    font-family: "Emerland-Light";
+    src: url("fonts/emerland-italic.ttf");
+
+}
+
+@font-face {
+    font-family: "Emerland";
+    src: url("fonts/emerland-italic.otf");
+
+}
+
+@font-face {
+    font-family: "Emerland";
+    src: url("fonts/emerland.ttf");
+
+}
+
+@font-face {
+    font-family: "Emerland-Bold";
+    src: url("fonts/emerland.otf");
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Emerland";
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27.12px;
+    letter-spacing: 0.02em;
+}
+
+.header_container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header_container .logo_img {
+    float: left;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.header_container nav {
+    float: left;
+}
+
+header {
+   /* background-color: #f0f0f0;*/
+    padding: 0;
+    height: 80px;
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 30px;
+    font-family: Emerland;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.6px;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #D6D6D6;
+}
+
+nav li:nth-child(1) a{
+    color:#0048B5;
+}
+
+.book-now-btn {
+    background-color: transparent;
+    color: white;
+    font-family: Emerland;
+    padding: 15px 30px;
+    border: 1px solid #0048B5;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.08px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    float: left;
+}
+
+.header-book-now-btn {
+    margin: 17px 0;
+}
+
+.book-now-btn:hover {
+    background-color: #0069d94a;
+}
+
+.header-book-now-btn:hover {
+    background-color: #0069d94a;
+}
+
+/*
+background {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+*/
+
+.background-image{
+    background-image: url('imgs/full-equiped-medical-cabinet.png');
+    background-size: cover;
+}
+
+.image_card{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.hero {
+    height: 880px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 528px;
+}
+
+.card-1 {
+    width: 60%;
+    padding: 0 40px;
+}
+
+.card-2 {
+    width: 40%;
+    padding: 60px 0 0 0;
+}
+
+.navigation {
+    margin: 0;
+    float: right;
+}
+/*
+main {
+    padding: 40px 0;
+}
+*/
+.banner {
+    text-align: left;
+}
+
+.banner h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: Emerland;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 72.32px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #FBFBFB;
+}
+
+.banner h4 {
+    font-family: Emerland;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36.16px;
+    letter-spacing: 0.02em;
+    text-align: left;    
+    color: #0048B5;
+    margin: 0px;
+}
+
+.banner p {
+    font-family: Emerland;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.12px;
+    letter-spacing: 0.02em;
+    text-align: left;    
+    color: #d5d5d5;
+    line-height: 1.5;
+    margin-bottom: 20px;
+
+}
+
+.banner a {
+    background-color: #0048B5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.arrow {
+    padding: 10px;
+    background-color: #d9d9d930;
+    opacity: 70%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    border: 1px solid #0048B5;
+}
+  
+  .arrow:hover {
+    background-color: #0069d94a;
+}
+
+/* for slider creation */
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-container {
+    display: flex;
+    transition: transform 0.9s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+}
+
+  
