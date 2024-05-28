@@ -33,24 +33,20 @@ body {
     letter-spacing: 0.02em;
 }
 
-.header_container {
+.header-container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0;
+    display: flex;
+    align-items: center;
 }
 
-.header_container .logo_img {
-    float: left;
+.header-container .logo_img {
     margin-top: 10px;
     margin-right: 40px;
 }
 
-.header_container nav {
-    float: left;
-}
-
 header {
-   /* background-color: #f0f0f0;*/
     padding: 0;
     height: 80px;
     display: flex;
@@ -59,7 +55,7 @@ header {
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 30px;
+    padding: 30px 60px 30px 0px;
     font-family: Emerland;
     font-size: 18px;
     font-weight: 400;
@@ -97,6 +93,10 @@ nav li:nth-child(1) a{
     float: left;
 }
 
+.book-now-btn-sec-2{
+    background-color: #d9d9d93a;
+}
+
 .header-book-now-btn {
     margin: 17px 0;
 }
@@ -120,6 +120,9 @@ background {
 .background-image{
     background-image: url('imgs/full-equiped-medical-cabinet.png');
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 742px;
+    background-size: 100% 100%;
 }
 
 .image_card{
@@ -128,8 +131,15 @@ background {
     border-radius: 15px;
 }
 
+/*
 .hero {
     height: 880px;
+}
+*/
+
+.sec-two {
+    height: 807px;
+    background-color: #1E1E1E;
 }
 
 .container {
@@ -137,11 +147,12 @@ background {
     justify-content: center;
     align-items: center;
     height: 528px;
+    padding: 50px 0;
 }
 
 .card-1 {
     width: 60%;
-    padding: 0 40px;
+    /*padding: 0 40px;*/
 }
 
 .card-2 {
@@ -153,11 +164,13 @@ background {
     margin: 0;
     float: right;
 }
+
 /*
 main {
     padding: 40px 0;
 }
 */
+
 .banner {
     text-align: left;
 }
@@ -174,6 +187,16 @@ main {
     color: #FBFBFB;
 }
 
+.banner h3 {
+    font-family: Emerland;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 45.2px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 14px;
+}
+
 .banner h4 {
     font-family: Emerland;
     font-size: 32px;
@@ -183,6 +206,16 @@ main {
     text-align: left;    
     color: #0048B5;
     margin: 0px;
+}
+
+.banner h5 {
+    font-family: Emerland;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22.6px;
+    text-align: left;
+    color: #0048B5;
+    margin: 0;
 }
 
 .banner p {
@@ -240,4 +273,26 @@ main {
     height: auto;
 }
 
-/**/
+.dash {
+    width: 48px;
+    height: 0px;
+    border-top: 1px solid #0048B5;
+    opacity: 1;
+    display: inline-block;
+    margin: 5px -5px 5px 0;
+}
+
+.icon-List {
+    padding: 0; 
+}
+
+.icon-List li {
+	margin: 0;
+	padding-left: 45px;
+	list-style: none;
+	background-image: url("imgs/iconlist.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 35px;
+    
+}
