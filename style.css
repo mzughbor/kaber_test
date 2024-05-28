@@ -144,7 +144,7 @@ background {
 */
 
 .sec-two {
-    height: 807px;
+    height: 700px;
     background-color: #1E1E1E;
 }
 
@@ -228,7 +228,6 @@ main {
     font-family: Emerland;
     font-size: 16px;
     font-weight: 400;
-    line-height: 27.12px;
     letter-spacing: 0.02em;
     text-align: left;    
     color: #d5d5d5;
@@ -309,6 +308,7 @@ main {
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     max-width: 500px;
+    max-height: 482px;
     margin: 40px auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -318,6 +318,11 @@ main {
     grid-column: 1 / span 1;
     background-color: #f7f7f7;
     padding: 20px;
+    border-radius: 15px 0 0 0;
+    background-image: url(imgs/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 230px;
 }
 
 .grid-item-2 {
@@ -325,6 +330,10 @@ main {
     grid-column: 2 / span 1;
     background-color: #f7f7f7;
     padding: 20px;
+    border-radius: 0px 15px 0px 0px;
+    background-image: url(imgs/img2.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .grid-item-3 {
@@ -332,4 +341,57 @@ main {
     grid-column: 1 / span 2;
     background-color: #f7f7f7;
     padding: 20px;
+    border-radius: 0px 0px 15px 15px;
+    background-image: url(imgs/img3.jpg);
+    background-size: cover;
+    height: 160px;
+}
+
+/* text inside using flexbox */
+.text-container {
+    display: flex;
+}
+
+.text-container-col {
+    display: flex;
+    flex-direction: column;
+}
+  
+.info-main {
+    width: 50%;
+}
+
+.info {
+    width: 100%;
+}
+
+.first-info {
+    flex-basis: 110px;
+}
+
+.info h2{
+    font-family: Emerland;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.info p {
+    font-family: Emerland;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 4px;
+    text-align: left;
+    color: #FFFFFF;    
+}
+
+.click-but{
+    font-family: Emerland;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 2px;
+    text-align: left;
+    color: #0048B5;
 }
