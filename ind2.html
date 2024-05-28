@@ -1,53 +1,95 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
 <style>
-.slider {
-  position: relative;
-  overflow: hidden;
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.slide-container {
-  display: flex;
-  transition: transform 0.9s ease-in-out;
+.grid-item-1 {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  background-color: #f7f7f7;
+  padding: 20px;
 }
 
-.slide {
-  width: 100%;
-  height: auto;
+.grid-item-2 {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  background-color: #f7f7f7;
+  padding: 20px;
 }
 
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+.grid-item-3 {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 2;
+  background-color: #f7f7f7;
+  padding: 20px;
 }
 
-.arrow-left {
-  left: 0;
+h2 {
+  margin-top: 0;
 }
 
-.arrow-right {
-  right: 0;
+p {
+  margin-bottom: 10px;
 }
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
 </style>
 </head>
 <body>
-    <div class="slider">
-        <div class="slide-container">
-          <img src="imgs/bg-light.jpg" alt="Image 1" class="slide">
-          <img src="imgs/full-equiped-medical-cabinet.png" alt="Image 3" class="slide">
-          <img src="imgs/bg-light.jpg" alt="Image 1" class="slide">
+    
 
-        </div>
-        <button class="arrow arrow-left">&lt;</button>
-        <button class="arrow arrow-right">&gt;</button>
-      </div>
+  <div class="grid-container">
+    <div class="grid-item-1">
+      <h2>Working Hours</h2>
+      <p>SAT - THU</p>
+      <p>From 12pm to 10pm</p>
+    </div>
+    <div class="grid-item-2">
+      <h2>Locations</h2>
+      <p>Fifth Settlement, New Cairo,</p>
+      <p>Cairo, Egypt 11835</p>
+      <p>Madinaty</p>
+    </div>
+    <div class="grid-item-3">
+      <h2>Book an appointment</h2>
+      <p>Call us: 019876534267</p>
+      <p>Book an online appointment <a href="#">Click here</a></p>
+    </div>
+  </div>
+
+
+
+
 </body>
 <script src="slider-script.js"></script>
 </html>
+
